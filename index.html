@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stykka Kitchen Models - Comprehensive Sales Material</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafbfc;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #1e3a2b 0%, #2c5530 50%, #4a7c59 100%);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 24px;
+            margin-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: translate(50px, -50px);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-section .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .hero-section .description {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 800px;
+            line-height: 1.7;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin-bottom: 40px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+            border: 1px solid #e9ecef;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: #2c5530;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .phone-analogy {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-left: 6px solid #4a7c59;
+        }
+        
+        .phone-analogy h3 {
+            font-size: 1.8rem;
+            color: #2c5530;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .phone-analogy h3::before {
+            content: "📱";
+            margin-right: 15px;
+            font-size: 2rem;
+        }
+        
+        .phone-analogy p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .analogy-examples {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .analogy-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .analogy-card:hover {
+            border-color: #4a7c59;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        
+        .analogy-card h4 {
+            color: #2c5530;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        
+        .analogy-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .models-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .model-card {
+            background: white;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 3px solid transparent;
+        }
+        
+        .model-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+        
+        .model-card.premium {
+            border-color: #4a7c59;
+            background: linear-gradient(135deg, #fff 0%, #f8fffe 100%);
+        }
+        
+        .model-card.essential {
+            border-color: #6c757d;
+            background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+        }
+        
+        .model-card.traditional {
+            border-color: #dc3545;
+            background: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+        }
+        
+        .model-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: white;
+            z-index: 2;
+            letter-spacing: 0.5px;
+        }
+        
+        .model-card.premium .model-badge {
+            background: linear-gradient(135deg, #4a7c59 0%, #2c5530 100%);
+        }
+        
+        .model-card.essential .model-badge {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+        }
+        
+        .model-card.traditional .model-badge {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        }
+        
+        .model-header {
+            padding: 40px 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .model-header h3 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: #2c5530;
+            font-weight: 700;
+        }
+        
+        .model-price {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .model-card.premium .model-price {
+            color: #4a7c59;
+        }
+        
+        .model-card.essential .model-price {
+            color: #6c757d;
+        }
+        
+        .model-card.traditional .model-price {
+            color: #dc3545;
+        }
+        
+        .model-subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        .model-description {
+            background: rgba(0,0,0,0.02);
+            padding: 20px;
+            margin: 0 30px 30px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .features-section {
+            padding: 0 30px 30px;
+        }
+        
+        .features-title {
+            font-size: 1.2rem;
+            color: #2c5530;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .features-list {
+            list-style: none;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+        
+        .feature-item:hover {
+            background: rgba(74, 124, 89, 0.05);
+            margin: 0 -10px 12px;
+            padding: 8px 10px;
+            border-radius: 8px;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 1rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feature-icon.check {
+            color: #28a745;
+        }
+        
+        .feature-icon.cross {
+            color: #dc3545;
+        }
+        
+        .feature-icon.partial {
+            color: #ffc107;
+        }
+        
+        .feature-text {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .tco-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 24px;
+            padding: 50px;
+            margin: 50px 0;
+            border: 1px solid #dee2e6;
+        }
+        
+        .tco-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .tco-header h2 {
+            font-size: 2.5rem;
+            color: #2c5530;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .tco-header p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .tco-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .tco-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .tco-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .tco-card.m1 {
+            border-color: #4a7c59;
+        }
+        
+        .tco-card.m2 {
+            border-color: #6c757d;
+        }
+        
+        .tco-card.traditional {
+            border-color: #dc3545;
+        }
+        
+        .tco-value {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .tco-card.m1 .tco-value {
+            color: #4a7c59;
+        }
+        
+        .tco-card.m2 .tco-value {
+            color: #6c757d;
+        }
+        
+        .tco-card.traditional .tco-value {
+            color: #dc3545;
+        }
+        
+        .tco-card h3 {
+            font-size: 1.5rem;
+            color: #2c5530;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .tco-breakdown {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        .tco-details {
+            background: rgba(0,0,0,0.02);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.85rem;
+            color: #555;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #4a7c59 0%, #2c5530 100%);
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            border-color: #4a7c59;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        
+        .benefit-card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .benefit-card h3 {
+            color: #2c5530;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+        
+        .benefit-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .detailed-comparison {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+        
+        .comparison-table th {
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #2c5530;
+            border-bottom: 2px solid #dee2e6;
+        }
+        
+        .comparison-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            vertical-align: top;
+        }
+        
+        .comparison-table tr:hover {
+            background: rgba(74, 124, 89, 0.05);
+        }
+        
+        .spec-category {
+            font-weight: 600;
+            color: #2c5530;
+            background: rgba(74, 124, 89, 0.1);
+        }
+        
+        .checkmark {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        .crossmark {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        
+        .partial {
+            color: #ffc107;
+            font-weight: bold;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, #2c5530 0%, #4a7c59 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-button {
+            padding: 15px 30px;
+            border: 2px solid white;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+        
+        .cta-button:hover {
+            background: white;
+            color: #2c5530;
+        }
+        
+        .cta-button.primary {
+            background: white;
+            color: #2c5530;
+        }
+        
+        .cta-button.primary:hover {
+            background: transparent;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-section .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .models-comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .tco-comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section {
+                padding: 30px 20px;
+            }
+            
+            .comparison-table {
+                font-size: 0.8rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Stykka Kitchen Models</h1>
+                <p class="subtitle">Choose Your Kitchen Like You Choose Your Phone Plan</p>
+                <p class="description">
+                    Just like smartphones, kitchens come in different tiers. But unlike phones that last 2-3 years, 
+                    your kitchen choice impacts your life for decades. Our M1 and M2 models both deliver the core 
+                    Stykka advantages at different price points - because the most sustainable choice isn't to buy more, 
+                    but to buy better.
+                </p>
+            </div>
+        </div>
+
+        <!-- Phone Analogy Section -->
+        <div class="section">
+            <div class="phone-analogy">
+                <h3>The Phone Plan Analogy That Changes Everything</h3>
+                <p>
+                    When choosing a phone plan, you understand that premium plans offer more features for higher cost, 
+                    but even basic plans give you core connectivity. Kitchen choices work the same way - but with 
+                    10-20 year lifespans instead of 2-year contracts.
+                </p>
+                
+                <div class="analogy-examples">
+                    <div class="analogy-card">
+                        <h4>📱 Premium Phone Plan = Stykka M1</h4>
+                        <p>
+                            Top-tier materials (HQ plywood), full circular lifecycle, maximum longevity. 
+                            Like unlimited data with 5G - you pay more upfront but get superior long-term value.
+                        </p>
+                    </div>
+                    
+                    <div class="analogy-card">
+                        <h4>📱 Essential Phone Plan = Stykka M2</h4>
+                        <p>
+                            Core smart features (digital twin, modularity) with cost-effective materials. 
+                            Like a solid 4G plan - excellent functionality at a more accessible price point.
+                        </p>
+                    </div>
+                    
+                    <div class="analogy-card">
+                        <h4>📱 Old Flip Phone = Traditional Kitchen</h4>
+                        <p>
+                            Seems cheaper initially, but lacks smart features, requires frequent replacements, 
+                            and hidden costs pile up. No digital integration, no upgrade path.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Models Comparison -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Model Comparison</h2>
+                <p>All Stykka models share core advantages that traditional kitchens simply cannot match</p>
+            </div>
+
+            <div class="models-comparison">
+                <!-- Stykka M1 -->
+                <div class="model-card premium">
+                    <div class="model-badge">Premium</div>
+                    <div class="model-header">
+                        <h3>Stykka M1</h3>
+                        <div class="model-price">30,000 DKK</div>
+                        <div class="model-subtitle">Circular Premium Kitchen</div>
+                    </div>
+                    
+                    <div class="model-description">
+                        Our flagship model featuring premium HQ plywood construction with durable finish. 
+                        Designed for complete circular lifecycle with 79 wooden components from 120 total parts. 
+                        Maximum longevity and sustainability with full digital integration.
+                    </div>
+                    
+                    <div class="features-section">
+                        <h4 class="features-title">Premium Features</h4>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">HQ Plywood with Durable Finish</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">79 Wooden + 120 Total Components</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Complete Circular Material Lifecycle</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Designed for Disassembly</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Digital Twin Integration</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Fleet Management Platform</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">QR Code Digital Access</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Easy Repair & Upgrade System</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Fully Modular Design</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Maximum Space Optimization</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Stykka M2 -->
+                <div class="model-card essential">
+                    <div class="model-badge">Essential</div>
+                    <div class="model-header">
+                        <h3>Stykka M2</h3>
+                        <div class="model-price">18,000 DKK</div>
+                        <div class="model-subtitle">Essential Smart Kitchen</div>
+                    </div>
+                    
+                    <div class="model-description">
+                        All core Stykka advantages with cost-effective materials. Features recyclable chipboard 
+                        with colored melamine for durability and aesthetics. Full digital integration and 
+                        modularity without compromising our core values.
+                    </div>
+                    
+                    <div class="features-section">
+                        <h4 class="features-title">Essential Features</h4>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Recyclable Chipboard with Colored Melamine</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Modular Component System</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon partial">~</span>
+                                <span class="feature-text">Recyclable Material Lifecycle</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Designed for Disassembly</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Digital Twin Integration</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Fleet Management Platform</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">QR Code Digital Access</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Easy Repair & Upgrade System</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Fully Modular Design</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon check">✓</span>
+                                <span class="feature-text">Upgrade Path to M1 Components</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Traditional Kitchen -->
+                <div class="model-card traditional">
+                    <div class="model-badge">Traditional</div>
+                    <div class="model-header">
+                        <h3>Traditional Kitchen</h3>
+                        <div class="model-price">25,000 DKK</div>
+                        <div class="model-subtitle">Standard Kitchen (Hidden Costs Apply)</div>
+                    </div>
+                    
+                    <div class="model-description">
+                        Conventional kitchen approach with fixed design, standard materials, and no digital 
+                        integration. Appears cost-effective initially but accumulates significant hidden costs 
+                        through repairs, trend updates, and eventual replacement needs.
+                    </div>
+                    
+                    <div class="features-section">
+                        <h4 class="features-title">Traditional Limitations</h4>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon partial">~</span>
+                                <span class="feature-text">Standard Materials (Variable Quality)</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon cross">✗</span>
+                                <span class="feature-text">Difficult & Expensive Repairs</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon cross">✗</span>
+                                <span class="feature-text">Fixed Design (No Adaptability)</span>
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon cross">✗</span>
+                                <span class="feature-text">No Upgrade Path</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Cost of Ownership Section -->
+        <div class="tco-section">
+            <div class="tco-header">
+                <h2>Total Cost of Ownership Analysis</h2>
+                <p>
+                    The real question isn't what you pay upfront - it's what you pay over the kitchen's lifetime. 
+                    Here's the 10-year reality check that changes everything.
+                </p>
+            </div>
+
+            <div class="tco-comparison">
+                <div class="tco-card m1">
+                    <span class="tco-value">32,000 DKK</span>
+                    <h3>Stykka M1</h3>
+                    <div class="tco-breakdown">
+                        <strong>10-Year Total Cost</strong><br>
+                        Premium investment with minimal ongoing costs
+                    </div>
+                    <div class="tco-details">
+                        <strong>Breakdown:</strong><br>
+                        • Initial: 30,000 DKK<br>
+                        • Maintenance: 1,500 DKK<br>
+                        • Repairs: 500 DKK<br>
+                        • Resale Value: High retention<br>
+                        • Hidden Costs: None
+                    </div>
+                </div>
+
+                <div class="tco-card m2">
+                    <span class="tco-value">22,000 DKK</span>
+                    <h3>Stykka M2</h3>
+                    <div class="tco-breakdown">
+                        <strong>10-Year Total Cost</strong><br>
+                        Smart entry point with upgrade flexibility
+                    </div>
+                    <div class="tco-details">
+                        <strong>Breakdown:</strong><br>
+                        • Initial: 18,000 DKK<br>
+                        • Maintenance: 2,500 DKK<br>
+                        • Repairs: 1,500 DKK<br>
+                        • Optional Upgrades: Available<br>
+                        • Hidden Costs: Minimal
+                    </div>
+                </div>
+
+                <div class="tco-card traditional">
+                    <span class="tco-value">48,000 DKK</span>
+                    <h3>Traditional Kitchen</h3>
+                    <div class="tco-breakdown">
+                        <strong>10-Year Total Cost</strong><br>
+                        Hidden costs accumulate rapidly
+                    </div>
+                    <div class="tco-details">
+                        <strong>Breakdown:</strong><br>
+                        • Initial: 25,000 DKK<br>
+                        • Repairs: 8,000 DKK<br>
+                        • Trend Updates: 7,000 DKK<br>
+                        • Replacement Parts: 5,000 DKK<br>
+                        • Labor Costs: 3,000 DKK
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 30px; border-radius: 16px; margin-top: 30px; text-align: center;">
+                <h3 style="color: #2c5530; margin-bottom: 15px;">The TCO Advantage</h3>
+                <p style="font-size: 1.1rem; color: #666; margin-bottom: 20px;">
+                    Both Stykka models deliver significantly lower total cost of ownership compared to traditional kitchens.
+                </p>
+                <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                    <div>
+                        <strong style="color: #4a7c59; font-size: 1.2rem;">M1 saves 33%</strong><br>
+                        <span style="color: #666;">vs traditional</span>
+                    </div>
+                    <div>
+                        <strong style="color: #6c757d; font-size: 1.2rem;">M2 saves 54%</strong><br>
+                        <span style="color: #666;">vs traditional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Comparison Table -->
+        <div class="detailed-comparison">
+            <div class="section-header">
+                <h2>Detailed Feature Comparison</h2>
+                <p>Side-by-side analysis of all key features and capabilities</p>
+            </div>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Feature Category</th>
+                        <th>Stykka M1</th>
+                        <th>Stykka M2</th>
+                        <th>Traditional Kitchen</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>MATERIALS & CONSTRUCTION</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Primary Material</td>
+                        <td>HQ Plywood with durable finish</td>
+                        <td>Recyclable chipboard with colored melamine</td>
+                        <td>Variable quality materials</td>
+                    </tr>
+                    <tr>
+                        <td>Component Count</td>
+                        <td>79 wooden + 120 total components</td>
+                        <td>Modular component system</td>
+                        <td>Fixed, non-modular parts</td>
+                    </tr>
+                    <tr>
+                        <td>Build Quality</td>
+                        <td><span class="checkmark">✓ Premium</span></td>
+                        <td><span class="checkmark">✓ Good</span></td>
+                        <td><span class="partial">~ Variable</span></td>
+                    </tr>
+                    <tr>
+                        <td>Durability Rating</td>
+                        <td><span class="checkmark">✓ 20+ years</span></td>
+                        <td><span class="checkmark">✓ 15+ years</span></td>
+                        <td><span class="crossmark">✗ 8-12 years</span></td>
+                    </tr>
+
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>DIGITAL INTEGRATION</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Digital Twin</td>
+                        <td><span class="checkmark">✓ Full integration</span></td>
+                        <td><span class="checkmark">✓ Full integration</span></td>
+                        <td><span class="crossmark">✗ Not available</span></td>
+                    </tr>
+                    <tr>
+                        <td>Fleet Management Platform</td>
+                        <td><span class="checkmark">✓ Complete system</span></td>
+                        <td><span class="checkmark">✓ Complete system</span></td>
+                        <td><span class="crossmark">✗ Not available</span></td>
+                    </tr>
+                    <tr>
+                        <td>QR Code Access</td>
+                        <td><span class="checkmark">✓ Instant access</span></td>
+                        <td><span class="checkmark">✓ Instant access</span></td>
+                        <td><span class="crossmark">✗ No digital access</span></td>
+                    </tr>
+                    <tr>
+                        <td>Documentation</td>
+                        <td><span class="checkmark">✓ Complete digital docs</span></td>
+                        <td><span class="checkmark">✓ Complete digital docs</span></td>
+                        <td><span class="crossmark">✗ Paper manuals only</span></td>
+                    </tr>
+
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>MODULARITY & ADAPTABILITY</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Modular Design</td>
+                        <td><span class="checkmark">✓ Fully modular</span></td>
+                        <td><span class="checkmark">✓ Fully modular</span></td>
+                        <td><span class="crossmark">✗ Fixed design</span></td>
+                    </tr>
+                    <tr>
+                        <td>Designed for Disassembly</td>
+                        <td><span class="checkmark">✓ Yes</span></td>
+                        <td><span class="checkmark">✓ Yes</span></td>
+                        <td><span class="crossmark">✗ No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Easy Reconfiguration</td>
+                        <td><span class="checkmark">✓ Tool-free changes</span></td>
+                        <td><span class="checkmark">✓ Tool-free changes</span></td>
+                        <td><span class="crossmark">✗ Requires renovation</span></td>
+                    </tr>
+                    <tr>
+                        <td>Space Optimization</td>
+                        <td><span class="checkmark">✓ Maximum efficiency</span></td>
+                        <td><span class="checkmark">✓ High efficiency</span></td>
+                        <td><span class="partial">~ Limited optimization</span></td>
+                    </tr>
+
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>MAINTENANCE & REPAIR</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Repair Complexity</td>
+                        <td><span class="checkmark">✓ Simple component swap</span></td>
+                        <td><span class="checkmark">✓ Simple component swap</span></td>
+                        <td><span class="crossmark">✗ Complex, expensive</span></td>
+                    </tr>
+                    <tr>
+                        <td>Part Availability</td>
+                        <td><span class="checkmark">✓ Guaranteed supply</span></td>
+                        <td><span class="checkmark">✓ Guaranteed supply</span></td>
+                        <td><span class="crossmark">✗ Discontinuation risk</span></td>
+                    </tr>
+                    <tr>
+                        <td>Upgrade Path</td>
+                        <td><span class="checkmark">✓ Individual components</span></td>
+                        <td><span class="checkmark">✓ To M1 components</span></td>
+                        <td><span class="crossmark">✗ Full replacement only</span></td>
+                    </tr>
+                    <tr>
+                        <td>Maintenance Cost</td>
+                        <td><span class="checkmark">✓ Very low</span></td>
+                        <td><span class="checkmark">✓ Low</span></td>
+                        <td><span class="crossmark">✗ High</span></td>
+                    </tr>
+
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>SUSTAINABILITY</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Material Lifecycle</td>
+                        <td><span class="checkmark">✓ Fully circular</span></td>
+                        <td><span class="partial">~ Recyclable</span></td>
+                        <td><span class="crossmark">✗ Linear (waste)</span></td>
+                    </tr>
+                    <tr>
+                        <td>End-of-Life Planning</td>
+                        <td><span class="checkmark">✓ Built-in</span></td>
+                        <td><span class="checkmark">✓ Built-in</span></td>
+                        <td><span class="crossmark">✗ No planning</span></td>
+                    </tr>
+                    <tr>
+                        <td>Carbon Footprint</td>
+                        <td><span class="checkmark">✓ Net positive</span></td>
+                        <td><span class="checkmark">✓ Neutral</span></td>
+                        <td><span class="crossmark">✗ High impact</span></td>
+                    </tr>
+                    <tr>
+                        <td>Waste Reduction</td>
+                        <td><span class="checkmark">✓ 95% reduction</span></td>
+                        <td><span class="checkmark">✓ 80% reduction</span></td>
+                        <td><span class="crossmark">✗ Baseline waste</span></td>
+                    </tr>
+
+                    <tr class="spec-category">
+                        <td colspan="4"><strong>ECONOMICS</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Initial Investment</td>
+                        <td>30,000 DKK</td>
+                        <td>18,000 DKK</td>
+                        <td>25,000 DKK</td>
+                    </tr>
+                    <tr>
+                        <td>10-Year TCO</td>
+                        <td><span class="checkmark">32,000 DKK</span></td>
+                        <td><span class="checkmark">22,000 DKK</span></td>
+                        <td><span class="crossmark">48,000 DKK</span></td>
+                    </tr>
+                    <tr>
+                        <td>Value Retention</td>
+                        <td><span class="checkmark">✓ High</span></td>
+                        <td><span class="checkmark">✓ Good</span></td>
+                        <td><span class="crossmark">✗ Rapid depreciation</span></td>
+                    </tr>
+                    <tr>
+                        <td>Hidden Costs</td>
+                        <td><span class="checkmark">✓ None</span></td>
+                        <td><span class="checkmark">✓ Minimal</span></td>
+                        <td><span class="crossmark">✗ Significant</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Key Benefits Section -->
+        <div class="section">
+            <div class="section-header">
+                <h2>Why Both Stykka Models Beat Traditional Kitchens</h2>
+                <p>Every Stykka kitchen delivers fundamental advantages that traditional kitchens simply cannot match</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">🔧</span>
+                    <h3>Designed for Disassembly</h3>
+                    <p>
+                        Revolutionary approach where every component is engineered for easy removal and replacement. 
+                        No more costly renovations - just swap components as needed.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">📱</span>
+                    <h3>Complete Digital Integration</h3>
+                    <p>
+                        Every kitchen comes with its digital twin, accessible via QR codes. Track usage, maintenance 
+                        schedules, and manage your entire kitchen fleet from one platform.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🔄</span>
+                    <h3>Future-Proof Modularity</h3>
+                    <p>
+                        Adapt to changing needs without replacement. Upgrade individual components, reconfigure 
+                        layouts, or expand functionality - all without waste or major investment.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">💰</span>
+                    <h3>Superior TCO Economics</h3>
+                    <p>
+                        Both M1 and M2 deliver dramatically lower total cost of ownership through reduced maintenance, 
+                        easy repairs, and elimination of replacement cycles.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🌱</span>
+                    <h3>Sustainability by Design</h3>
+                    <p>
+                        Not just eco-friendly materials, but circular design thinking. M1 offers full circularity, 
+                        M2 provides recyclability - both infinitely better than linear traditional approaches.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">⚡</span>
+                    <h3>Space Optimization</h3>
+                    <p>
+                        Precision-engineered components maximize every cubic centimeter. Transform even small spaces 
+                        into highly functional, beautiful kitchens that feel larger than they are.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🛠️</span>
+                    <h3>Simple Maintenance</h3>
+                    <p>
+                        Component-level maintenance means no specialist trades required. Most repairs and updates 
+                        can be completed by users themselves with simple tools.
+                    </p>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">📊</span>
+                    <h3>Data-Driven Insights</h3>
+                    <p>
+                        Digital integration provides usage analytics, maintenance predictions, and optimization 
+                        recommendations - intelligence that improves your kitchen over time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Value Proposition Summary -->
+        <div class="section">
+            <div class="section-header">
+                <h2>The Stykka Value Proposition</h2>
+                <p>Why our approach changes everything about kitchen ownership</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: linear-gradient(135deg, #f8fffe 0%, #f0f8f5 100%); padding: 30px; border-radius: 16px; border-left: 4px solid #4a7c59;">
+                    <h3 style="color: #2c5530; margin-bottom: 15px; font-size: 1.3rem;">M1: Premium Choice</h3>
+                    <p style="margin-bottom: 15px;">For clients who want the absolute best - premium materials, full circular lifecycle, maximum longevity.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;">• Lowest 10-year TCO despite higher upfront cost</li>
+                        <li style="margin-bottom: 8px;">• Premium HQ plywood construction</li>
+                        <li style="margin-bottom: 8px;">• Complete circular material lifecycle</li>
+                        <li style="margin-bottom: 8px;">• Maximum value retention</li>
+                    </ul>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #f8f9fa 0%, #f1f3f4 100%); padding: 30px; border-radius: 16px; border-left: 4px solid #6c757d;">
+                    <h3 style="color: #2c5530; margin-bottom: 15px; font-size: 1.3rem;">M2: Smart Entry</h3>
+                    <p style="margin-bottom: 15px;">For budget-conscious clients who still want all core Stykka advantages and smart functionality.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;">• Exceptional value at accessible price point</li>
+                        <li style="margin-bottom: 8px;">• All digital and modular advantages</li>
+                        <li style="margin-bottom: 8px;">• Upgrade path to M1 components</li>
+                        <li style="margin-bottom: 8px;">• Still 54% lower TCO than traditional</li>
+                    </ul>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fff5f5 0%, #fee 100%); padding: 30px; border-radius: 16px; border-left: 4px solid #dc3545;">
+                    <h3 style="color: #2c5530; margin-bottom: 15px; font-size: 1.3rem;">Traditional: Hidden Costs</h3>
+                    <p style="margin-bottom: 15px;">What seems like a budget option becomes the most expensive choice over time.</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;">• Highest total cost of ownership</li>
+                        <li style="margin-bottom: 8px;">• No digital integration or data</li>
+                        <li style="margin-bottom: 8px;">• Expensive repairs and updates</li>
+                        <li style="margin-bottom: 8px;">• Complete replacement needed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <h2>Ready to Transform Kitchen Ownership?</h2>
+            <p>
+                Join the modular revolution. Choose the model that fits your needs and budget, 
+                but always choose smarter kitchen ownership with Stykka.
+            </p>
+            <div class="cta-buttons">
+                <a href="#" class="cta-button primary">Schedule Consultation</a>
+                <a href="#" class="cta-button">Download Detailed Specs</a>
+                <a href="#" class="cta-button">View 3D Models</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "stykka-kitchen-models",
+  "version": "1.0.0",
+  "description": "Sales page for Stykka Kitchen Models M1 and M2",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'Build complete - static files ready for deployment'",
+    "preview": "python3 -m http.server 8080"
+  },
+  "keywords": ["stykka", "kitchen", "modular", "sustainability", "sales-page"],
+  "author": "Stykka",
+  "license": "MIT"
+}
