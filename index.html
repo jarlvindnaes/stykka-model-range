@@ -75,7 +75,7 @@
         </div>
 
         <!-- Phone Analogy Section -->
-        <div class="section">
+        <div class="section animate-on-scroll">
             <div class="phone-analogy">
                 <h3>The Phone Plan Analogy That Changes Everything</h3>
                 <p>
@@ -113,7 +113,7 @@
         </div>
 
         <!-- Models Comparison -->
-        <div class="section">
+        <div class="section animate-on-scroll">
             <div class="section-header">
                 <h2>Model Comparison</h2>
                 <p>All Stykka models share core advantages that traditional kitchens simply cannot match</p>
@@ -121,7 +121,7 @@
 
             <div class="models-comparison">
                 <!-- Stykka M1 -->
-                <div class="model-card premium">
+                <div class="model-card premium animate-scale animate-stagger">
                     <div class="model-badge">Premium</div>
                     <img src="m1-red-kitchen.jpeg" alt="Stykka M1 Red Kitchen" class="model-image" loading="lazy">
                     <div class="model-header">
@@ -184,7 +184,7 @@
                 </div>
 
                 <!-- Stykka M2 -->
-                <div class="model-card essential">
+                <div class="model-card essential animate-scale animate-stagger">
                     <div class="model-badge">Essential</div>
                     <img src="m2-black-kitchen.jpeg" alt="Stykka M2 Black Kitchen" class="model-image" loading="lazy">
                     <div class="model-header">
@@ -247,7 +247,7 @@
                 </div>
 
                 <!-- Traditional Kitchen -->
-                <div class="model-card traditional">
+                <div class="model-card traditional animate-scale animate-stagger">
                     <div class="model-badge">Traditional</div>
                     <div class="placeholder-image">
                         <div class="placeholder-content">
@@ -294,7 +294,7 @@
         </div>
 
         <!-- Total Cost of Ownership Section -->
-        <div class="tco-section">
+        <div class="tco-section animate-on-scroll">
             <div class="tco-header">
                 <h2>Total Cost of Ownership Analysis</h2>
                 <p>
@@ -304,7 +304,7 @@
             </div>
 
             <div class="tco-comparison">
-                <div class="tco-card m1">
+                <div class="tco-card m1 animate-fade-up animate-stagger">
                     <span class="tco-value">32,000 DKK</span>
                     <h3>Stykka M1</h3>
                     <div class="tco-breakdown">
@@ -321,7 +321,7 @@
                     </div>
                 </div>
 
-                <div class="tco-card m2">
+                <div class="tco-card m2 animate-fade-up animate-stagger">
                     <span class="tco-value">22,000 DKK</span>
                     <h3>Stykka M2</h3>
                     <div class="tco-breakdown">
@@ -338,7 +338,7 @@
                     </div>
                 </div>
 
-                <div class="tco-card traditional">
+                <div class="tco-card traditional animate-fade-up animate-stagger">
                     <span class="tco-value">48,000 DKK</span>
                     <h3>Traditional Kitchen</h3>
                     <div class="tco-breakdown">
@@ -563,7 +563,7 @@
         </div>
 
         <!-- Key Benefits Section -->
-        <div class="section">
+        <div class="section animate-on-scroll">
             <div class="section-header">
                 <h2>Why Both Stykka Models Beat Traditional Kitchens</h2>
                 <p>Every Stykka kitchen delivers fundamental advantages that traditional kitchens simply cannot match</p>
@@ -701,5 +701,65 @@
             </div>
         </div>
     </div>
+
+    <!-- Smooth Scroll & Animation JavaScript -->
+    <script>
+        // Performance-optimized Intersection Observer for scroll animations
+        (function() {
+            // Check for Intersection Observer support
+            if (!('IntersectionObserver' in window)) return;
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animatable elements
+            document.addEventListener('DOMContentLoaded', () => {
+                const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-fade-up, .animate-scale');
+                animateElements.forEach(el => observer.observe(el));
+            });
+
+            // Enhanced smooth scroll for anchor links
+            document.addEventListener('click', (e) => {
+                if (e.target.tagName === 'A' && e.target.getAttribute('href')?.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(e.target.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+
+            // Performance optimization: reduce animations on slow devices
+            if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
+                document.body.style.setProperty('--animation-duration', '0.3s');
+            }
+
+            // Preload critical animations on interaction
+            let interactionStarted = false;
+            ['mousedown', 'touchstart', 'keydown'].forEach(event => {
+                document.addEventListener(event, () => {
+                    if (!interactionStarted) {
+                        interactionStarted = true;
+                        // Trigger any deferred animations
+                        document.body.classList.add('interactions-ready');
+                    }
+                }, { once: true });
+            });
+        })();
+    </script>
 </body>
 </html>
