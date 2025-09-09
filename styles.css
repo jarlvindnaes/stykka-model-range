@@ -1,0 +1,94 @@
+/* Main CSS - Loaded Asynchronously */
+.section{background:white;border-radius:20px;padding:50px;margin-bottom:40px;box-shadow:0 8px 32px rgba(0,0,0,0.08);border:1px solid #e9ecef}
+.section-header{text-align:center;margin-bottom:50px}
+.section-header h2{font-size:2.5rem;color:#2c5530;margin-bottom:15px;font-weight:700}
+.section-header p{font-size:1.2rem;color:#666;max-width:600px;margin:0 auto}
+.phone-analogy{background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);border-radius:20px;padding:40px;margin-bottom:40px;border-left:6px solid #4a7c59}
+.phone-analogy h3{font-size:1.8rem;color:#2c5530;margin-bottom:25px;display:flex;align-items:center}
+.phone-analogy h3::before{content:"📱";margin-right:15px;font-size:2rem}
+.phone-analogy p{font-size:1.1rem;color:#555;margin-bottom:30px}
+.analogy-examples{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.analogy-card{background:white;padding:25px;border-radius:15px;border:2px solid #e9ecef;transition:all 0.3s ease;position:relative}
+.analogy-card:hover{border-color:#4a7c59;transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,0.12)}
+.analogy-card h4{color:#2c5530;margin-bottom:15px;font-size:1.2rem;font-weight:600}
+.analogy-card p{color:#666;font-size:0.95rem;line-height:1.5}
+.models-comparison{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-bottom:50px}
+.model-card{background:white;border-radius:24px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,0.1);transition:all 0.4s ease;position:relative;border:3px solid transparent}
+.model-image{width:100%;height:280px;object-fit:cover;object-position:center}
+.placeholder-image{width:100%;height:280px;background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);display:flex;align-items:center;justify-content:center;border-bottom:1px solid #e9ecef;position:relative}
+.placeholder-content{text-align:center;color:#6c757d}
+.placeholder-icon{font-size:4rem;margin-bottom:15px;opacity:0.7}
+.placeholder-text{font-size:1.1rem;font-weight:600;margin-bottom:5px}
+.placeholder-subtext{font-size:0.9rem;opacity:0.8}
+.model-card:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(0,0,0,0.15)}
+.model-card.premium{border-color:#4a7c59;background:linear-gradient(135deg,#fff 0%,#f8fffe 100%)}
+.model-card.essential{border-color:#6c757d;background:linear-gradient(135deg,#fff 0%,#f8f9fa 100%)}
+.model-card.traditional{border-color:#dc3545;background:linear-gradient(135deg,#fff 0%,#fff5f5 100%)}
+.model-badge{position:absolute;top:20px;right:20px;padding:8px 16px;border-radius:25px;font-size:0.8rem;font-weight:700;text-transform:uppercase;color:white;z-index:2;letter-spacing:0.5px}
+.model-card.premium .model-badge{background:linear-gradient(135deg,#4a7c59 0%,#2c5530 100%)}
+.model-card.essential .model-badge{background:linear-gradient(135deg,#6c757d 0%,#495057 100%)}
+.model-card.traditional .model-badge{background:linear-gradient(135deg,#dc3545 0%,#c82333 100%)}
+.model-header{padding:40px 30px 20px;text-align:center;position:relative}
+.model-header h3{font-size:2.2rem;margin-bottom:15px;color:#2c5530;font-weight:700}
+.model-price{font-size:2rem;font-weight:700;margin-bottom:8px}
+.model-card.premium .model-price{color:#4a7c59}
+.model-card.essential .model-price{color:#6c757d}
+.model-card.traditional .model-price{color:#dc3545}
+.model-subtitle{color:#666;font-size:1rem;margin-bottom:25px;font-weight:500}
+.model-description{background:rgba(0,0,0,0.02);padding:20px;margin:0 30px 30px;border-radius:12px;font-size:0.95rem;color:#555;line-height:1.6}
+.features-section{padding:0 30px 30px}
+.features-title{font-size:1.2rem;color:#2c5530;margin-bottom:20px;font-weight:600;text-align:center}
+.features-list{list-style:none}
+.feature-item{display:flex;align-items:flex-start;margin-bottom:12px;padding:8px 0;border-bottom:1px solid rgba(0,0,0,0.05);transition:all 0.2s ease}
+.feature-item:hover{background:rgba(74,124,89,0.05);margin:0 -10px 12px;padding:8px 10px;border-radius:8px}
+.feature-item:last-child{border-bottom:none}
+.feature-icon{width:24px;height:24px;margin-right:12px;flex-shrink:0;font-size:1rem;font-weight:bold;display:flex;align-items:center;justify-content:center}
+.feature-icon.check{color:#28a745}
+.feature-icon.cross{color:#dc3545}
+.feature-icon.partial{color:#ffc107}
+.feature-text{font-size:0.95rem;color:#333;line-height:1.4}
+.tco-section{background:linear-gradient(135deg,#f8f9fa 0%,#e9ecef 100%);border-radius:24px;padding:50px;margin:50px 0;border:1px solid #dee2e6}
+.tco-header{text-align:center;margin-bottom:40px}
+.tco-header h2{font-size:2.5rem;color:#2c5530;margin-bottom:15px;font-weight:700}
+.tco-header p{font-size:1.2rem;color:#666;max-width:700px;margin:0 auto}
+.tco-comparison{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px;margin-bottom:40px}
+.tco-card{background:white;border-radius:20px;padding:35px;text-align:center;box-shadow:0 8px 25px rgba(0,0,0,0.1);border:3px solid transparent;transition:all 0.3s ease}
+.tco-card:hover{transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.15)}
+.tco-card.m1{border-color:#4a7c59}
+.tco-card.m2{border-color:#6c757d}
+.tco-card.traditional{border-color:#dc3545}
+.tco-value{font-size:3rem;font-weight:800;margin-bottom:10px;display:block}
+.tco-card.m1 .tco-value{color:#4a7c59}
+.tco-card.m2 .tco-value{color:#6c757d}
+.tco-card.traditional .tco-value{color:#dc3545}
+.tco-card h3{font-size:1.5rem;color:#2c5530;margin-bottom:15px;font-weight:600}
+.tco-breakdown{font-size:0.95rem;color:#666;line-height:1.5;margin-bottom:20px}
+.tco-details{background:rgba(0,0,0,0.02);padding:15px;border-radius:10px;font-size:0.85rem;color:#555}
+.benefits-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-top:40px}
+.benefit-card{background:white;padding:30px;border-radius:16px;text-align:center;border:2px solid #e9ecef;transition:all 0.3s ease;position:relative;overflow:hidden}
+.benefit-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#4a7c59 0%,#2c5530 100%);transform:translateX(-100%);transition:transform 0.3s ease}
+.benefit-card:hover{border-color:#4a7c59;transform:translateY(-5px);box-shadow:0 12px 30px rgba(0,0,0,0.15)}
+.benefit-card:hover::before{transform:translateX(0)}
+.benefit-icon{font-size:3rem;margin-bottom:20px;display:block}
+.benefit-card h3{color:#2c5530;margin-bottom:15px;font-size:1.3rem;font-weight:600}
+.benefit-card p{color:#666;font-size:0.95rem;line-height:1.5}
+.detailed-comparison{background:white;border-radius:20px;padding:40px;margin:40px 0;box-shadow:0 8px 32px rgba(0,0,0,0.08)}
+.comparison-table{width:100%;border-collapse:collapse;margin-top:30px;font-size:0.9rem}
+.comparison-table th{background:#f8f9fa;padding:15px;text-align:left;font-weight:600;color:#2c5530;border-bottom:2px solid #dee2e6}
+.comparison-table td{padding:12px 15px;border-bottom:1px solid #e9ecef;vertical-align:top}
+.comparison-table tr:hover{background:rgba(74,124,89,0.05)}
+.spec-category{font-weight:600;color:#2c5530;background:rgba(74,124,89,0.1)}
+.checkmark{color:#28a745;font-weight:bold}
+.crossmark{color:#dc3545;font-weight:bold}
+.partial{color:#ffc107;font-weight:bold}
+.cta-section{background:linear-gradient(135deg,#2c5530 0%,#4a7c59 100%);color:white;padding:50px;border-radius:24px;text-align:center;margin-top:50px}
+.cta-section h2{font-size:2.5rem;margin-bottom:20px;font-weight:700}
+.cta-section p{font-size:1.2rem;margin-bottom:30px;opacity:0.95}
+.cta-buttons{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.cta-button{padding:15px 30px;border:2px solid white;border-radius:50px;color:white;text-decoration:none;font-weight:600;transition:all 0.3s ease;background:transparent}
+.cta-button:hover{background:white;color:#2c5530}
+.cta-button.primary{background:white;color:#2c5530}
+.cta-button.primary:hover{background:transparent;color:white}
+@media (max-width:1200px){.models-comparison{grid-template-columns:1fr;gap:25px}}
+@media (max-width:768px){.section{padding:25px 15px;margin-bottom:25px}.section-header h2{font-size:2rem;margin-bottom:12px}.section-header p{font-size:1.1rem}.phone-analogy{padding:25px 20px;margin-bottom:25px}.phone-analogy h3{font-size:1.5rem;margin-bottom:15px}.phone-analogy p{font-size:1rem;margin-bottom:20px}.analogy-examples{grid-template-columns:1fr;gap:15px}.analogy-card{padding:20px}.analogy-card h4{font-size:1.1rem;margin-bottom:10px}.analogy-card p{font-size:0.9rem}.models-comparison{grid-template-columns:1fr;gap:20px}.model-image,.placeholder-image{height:240px}.model-header{padding:25px 20px 15px}.model-header h3{font-size:1.8rem;margin-bottom:10px}.model-price{font-size:1.6rem;margin-bottom:6px}.model-subtitle{font-size:0.9rem;margin-bottom:20px}.model-description{margin:0 20px 20px;padding:15px;font-size:0.9rem}.features-section{padding:0 20px 20px}.features-title{font-size:1.1rem;margin-bottom:15px}.feature-item{margin-bottom:10px;padding:6px 0}.feature-text{font-size:0.9rem}.tco-section{padding:30px 20px;margin:30px 0}.tco-header h2{font-size:2rem;margin-bottom:12px}.tco-header p{font-size:1.1rem}.tco-comparison{grid-template-columns:1fr;gap:20px;margin-bottom:25px}.tco-card{padding:25px}.tco-value{font-size:2.2rem;margin-bottom:8px}.tco-card h3{font-size:1.3rem;margin-bottom:12px}.tco-breakdown{font-size:0.9rem;margin-bottom:15px}.tco-details{padding:12px;font-size:0.8rem}.benefits-grid{grid-template-columns:1fr;gap:20px;margin-top:25px}.benefit-card{padding:25px}.benefit-icon{font-size:2.5rem;margin-bottom:15px}.benefit-card h3{font-size:1.2rem;margin-bottom:12px}.benefit-card p{font-size:0.9rem}.detailed-comparison{padding:25px 15px;margin:25px 0}.comparison-table{font-size:0.75rem;display:block;overflow-x:auto;white-space:nowrap}.comparison-table th,.comparison-table td{padding:6px 4px;min-width:120px}.comparison-table th:first-child,.comparison-table td:first-child{min-width:140px;position:sticky;left:0;background:white;z-index:1}.comparison-table th{position:sticky;top:0;background:#f8f9fa;z-index:2}.comparison-table th:first-child{z-index:3}.cta-section{padding:30px 20px;margin-top:30px}.cta-section h2{font-size:2rem;margin-bottom:15px}.cta-section p{font-size:1.1rem;margin-bottom:25px}.cta-buttons{flex-direction:column;gap:12px}.cta-button{padding:12px 25px;font-size:1rem;width:100%;max-width:280px;margin:0 auto}.placeholder-icon{font-size:3rem;margin-bottom:12px}.placeholder-text{font-size:1rem;margin-bottom:4px}.placeholder-subtext{font-size:0.85rem}}
+@media (max-width:480px){.section{padding:20px 12px}.section-header h2{font-size:1.8rem}.section-header p{font-size:1rem}.phone-analogy{padding:20px 15px}.phone-analogy h3{font-size:1.3rem}.analogy-card{padding:15px}.model-image,.placeholder-image{height:200px}.model-header{padding:20px 15px 12px}.model-header h3{font-size:1.6rem}.model-price{font-size:1.4rem}.model-description{margin:0 15px 15px;padding:12px;font-size:0.85rem}.features-section{padding:0 15px 15px}.tco-section{padding:25px 15px}.tco-card{padding:20px}.tco-value{font-size:2rem}.benefit-card{padding:20px}.detailed-comparison{padding:20px 10px}.comparison-table{font-size:0.7rem}.comparison-table th,.comparison-table td{padding:4px 3px;min-width:100px}.comparison-table th:first-child,.comparison-table td:first-child{min-width:120px}.cta-section{padding:25px 15px}.cta-section h2{font-size:1.8rem}.cta-section p{font-size:1rem}}
