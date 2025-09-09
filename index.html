@@ -164,7 +164,7 @@
         
         .models-comparison {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 50px;
         }
@@ -177,6 +177,46 @@
             transition: all 0.4s ease;
             position: relative;
             border: 3px solid transparent;
+        }
+        
+        .model-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .placeholder-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #e9ecef;
+            position: relative;
+        }
+        
+        .placeholder-content {
+            text-align: center;
+            color: #6c757d;
+        }
+        
+        .placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            opacity: 0.7;
+        }
+        
+        .placeholder-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .placeholder-subtext {
+            font-size: 0.9rem;
+            opacity: 0.8;
         }
         
         .model-card:hover {
@@ -609,6 +649,13 @@
             color: white;
         }
         
+        @media (max-width: 1200px) {
+            .models-comparison {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+        }
+        
         @media (max-width: 768px) {
             .hero-section h1 {
                 font-size: 2.5rem;
@@ -710,6 +757,7 @@
                 <!-- Stykka M1 -->
                 <div class="model-card premium">
                     <div class="model-badge">Premium</div>
+                    <img src="m1-red-kitchen.jpeg" alt="Stykka M1 Red Kitchen" class="model-image">
                     <div class="model-header">
                         <h3>Stykka M1</h3>
                         <div class="model-price">30,000 DKK</div>
@@ -772,6 +820,7 @@
                 <!-- Stykka M2 -->
                 <div class="model-card essential">
                     <div class="model-badge">Essential</div>
+                    <img src="m2-black-kitchen.png" alt="Stykka M2 Black Kitchen" class="model-image">
                     <div class="model-header">
                         <h3>Stykka M2</h3>
                         <div class="model-price">18,000 DKK</div>
@@ -834,6 +883,13 @@
                 <!-- Traditional Kitchen -->
                 <div class="model-card traditional">
                     <div class="model-badge">Traditional</div>
+                    <div class="placeholder-image">
+                        <div class="placeholder-content">
+                            <div class="placeholder-icon">🏠</div>
+                            <div class="placeholder-text">Traditional Kitchen</div>
+                            <div class="placeholder-subtext">Standard Design</div>
+                        </div>
+                    </div>
                     <div class="model-header">
                         <h3>Traditional Kitchen</h3>
                         <div class="model-price">25,000 DKK</div>
